@@ -1,8 +1,14 @@
-import express from 'express'
+import  express from 'express'
+import routes from './routes/routes';
 
 const app = express();
 
-app.listen(3333);
+app.use(routes);
+
+
+
+
+app.listen(3333,()=>console.log("Servidor inicializado......"));
 
 
 
